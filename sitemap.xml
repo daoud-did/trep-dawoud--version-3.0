@@ -1,16 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- الصفحة الرئيسية -->
   <url>
     <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2026-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
+  
+  <!-- الجبال -->
   <url>
     <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/mountains.html</loc>
-    <lastmod>2024-12-07</lastmod>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  
+  <!-- المدونة -->
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/blog.html</loc>
+    <lastmod>2026-01-03</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
+  </url>
+  
+  <!-- الخدمات -->
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/services.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- الدورات -->
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/courses.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- الأسئلة -->
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/question.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <!-- المصادقة والحسابات (منخفضة الأولوية للـ SEO) -->
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/login.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/signup.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <!-- لوحة التحكم (إن أمكن الوصول إليها للزوار) -->
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/dashboard.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <!-- الملف الشخصي (إن أمكن الوصول إليه للزوار) -->
+  <url>
+    <loc>https://daoud-did.github.io/trep-dawoud--version-3.0/profile.html</loc>
+    <lastmod>2026-01-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>
 
