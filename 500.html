@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>500 - خطأ في الخادم | TREP DAWOUD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 300px);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #ef4444 0%, #dc2626 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+            animation: pulse 2s infinite;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        body.dark-mode .error-title {
+            color: #e0e0e0;
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            color: #666;
+            margin: 1rem 0 2rem;
+            max-width: 500px;
+        }
+
+        body.dark-mode .error-description {
+            color: #aaa;
+        }
+
+        .error-image {
+            width: 200px;
+            height: 200px;
+            margin: 2rem 0;
+            opacity: 0.9;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .error-btn {
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #d4845c 0%, #e8a876 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 132, 92, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #d4845c;
+            border: 2px solid #d4845c;
+        }
+
+        .btn-secondary:hover {
+            background: #d4845c;
+            color: white;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .error-details {
+            margin-top: 2rem;
+            padding: 1.5rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+            text-align: right;
+        }
+
+        body.dark-mode .error-details {
+            background: #333;
+        }
+
+        .error-details p {
+            color: #666;
+            font-size: 0.95rem;
+            margin: 0.5rem 0;
+        }
+
+        body.dark-mode .error-details p {
+            color: #aaa;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>TREP DAWOUD</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="mountains.html" class="nav-link">الجبال</a>
+                <a href="dashboard.html" class="nav-link">لوحة التحكم</a>
+                <a href="blog.html" class="nav-link">المدونة</a>
+                <a href="services.html" class="nav-link">الخدمات</a>
+            </nav>
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeBtn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Error Container -->
+    <div class="error-container">
+        <h1 class="error-code">500</h1>
+        <h2 class="error-title">خطأ في الخادم</h2>
+        <p class="error-description">
+            عذراً، حدث خطأ غير متوقع على الخادم. يرجى المحاولة مرة أخرى لاحقاً.
+        </p>
+        <i class="fas fa-server error-image"></i>
+        
+        <div class="error-actions">
+            <a href="index.html" class="error-btn btn-primary">العودة للرئيسية</a>
+            <button class="error-btn btn-secondary" onclick="location.reload()">إعادة تحميل</button>
+        </div>
+
+        <div class="error-details">
+            <p><i class="fas fa-info-circle"></i> رقم الخطأ: 500 - Internal Server Error</p>
+            <p><i class="fas fa-clock"></i> الوقت: <span id="errorTime"></span></p>
+            <p><i class="fas fa-envelope"></i> إذا استمرت المشكلة، يرجى <a href="contact.html">التواصل معنا</a></p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TREP DAWOUD</h3>
+                <p>استكشف أجمل الجبال حول العالم</p>
+            </div>
+            <div class="footer-section">
+                <h3>الروابط السريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.getElementById('errorTime').textContent = new Date().toLocaleString('ar-SA');
+    </script>
+</body>
+</html>

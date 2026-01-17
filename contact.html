@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تواصل معنا - TREP DAWOUD - استكشف أجمل الجبال حول العالم">
+    <meta name="keywords" content="تواصل, استفسارات, دعم, TREP DAWOUD">
+    <title>اتصل بنا | TREP DAWOUD</title>
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="اتصل بنا | TREP DAWOUD">
+    <meta property="og:description" content="تواصل معنا للاستفسار والدعم">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://trepdawoud.com/contact.html">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="css/breadcrumb.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-section {
+            padding: 4rem 2rem;
+            background: linear-gradient(135deg, #f5f5f5 0%, #ffffff 100%);
+        }
+
+        body.dark-mode .contact-section {
+            background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
+        }
+
+        .contact-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        body.dark-mode .section-header h2 {
+            color: #e0e0e0;
+        }
+
+        .section-header p {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        body.dark-mode .section-header p {
+            color: #aaa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .info-card {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1.5rem;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        body.dark-mode .info-card {
+            background: #333;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .info-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .info-icon {
+            font-size: 1.8rem;
+            color: #d4845c;
+            flex-shrink: 0;
+            margin-top: 0.3rem;
+        }
+
+        .info-content h3 {
+            margin: 0 0 0.5rem;
+            color: #333;
+            font-size: 1.1rem;
+        }
+
+        body.dark-mode .info-content h3 {
+            color: #e0e0e0;
+        }
+
+        .info-content p {
+            margin: 0;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        body.dark-mode .info-content p {
+            color: #aaa;
+        }
+
+        .info-content a {
+            color: #d4845c;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .info-content a:hover {
+            color: #e8a876;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        .social-link {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #d4845c;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .social-link:hover {
+            background: #e8a876;
+            transform: scale(1.1);
+        }
+
+        .contact-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        body.dark-mode .contact-form {
+            background: #333;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #333;
+        }
+
+        body.dark-mode .form-group label {
+            color: #e0e0e0;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+
+        body.dark-mode .form-group input,
+        body.dark-mode .form-group textarea,
+        body.dark-mode .form-group select {
+            background: #2a2a2a;
+            border-color: #444;
+            color: #e0e0e0;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #d4845c;
+            box-shadow: 0 0 0 3px rgba(212, 132, 92, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+
+        @media (max-width: 600px) {
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .form-submit {
+            background: linear-gradient(135deg, #d4845c 0%, #e8a876 100%);
+            color: white;
+            padding: 0.8rem 2rem;
+            border: none;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            width: 100%;
+        }
+
+        .form-submit:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 132, 92, 0.3);
+        }
+
+        .form-submit:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .required {
+            color: #ef4444;
+        }
+
+        .map-container {
+            margin-top: 3rem;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>TREP DAWOUD</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="mountains.html" class="nav-link">الجبال</a>
+                <a href="dashboard.html" class="nav-link">لوحة التحكم</a>
+                <a href="blog.html" class="nav-link">المدونة</a>
+                <a href="courses.html" class="nav-link">الدورات</a>
+                <a href="services.html" class="nav-link">الخدمات</a>
+                <a href="contact.html" class="nav-link active">اتصل بنا</a>
+                <a href="login.html" class="nav-link">تسجيل الدخول</a>
+            </nav>
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeBtn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div id="breadcrumb-nav"></div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="contact-hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="glow-text">اتصل بنا</span>
+            </h1>
+            <p class="hero-subtitle">نحن هنا لمساعدتك - تواصل معنا في أي وقت</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="contact-container">
+            <div class="section-header">
+                <h2>كيف يمكنك التواصل معنا؟</h2>
+                <p>لدينا عدة طرق للتواصل. اختر الطريقة الأنسب لك</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>الموقع</h3>
+                            <p>المملكة المغربية<br>الرباط، المغرب</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>رقم الهاتف</h3>
+                            <p><a href="tel:+212696750378">+212 6 96 75 03 78</a></p>
+                            <p style="font-size: 0.9rem;">السبت - الخميس: 09:00 - 18:00</p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>البريد الإلكتروني</h3>
+                            <p><a href="mailto:dauodm955@gmail.com">dauodm955@gmail.com</a></p>
+                            <p><a href="mailto:support@trepdawoud.com">support@trepdawoud.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>تابعنا على وسائل التواصل</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link" title="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="social-link" title="Twitter">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                                <a href="#" class="social-link" title="Instagram">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="social-link" title="LinkedIn">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form" id="contactForm">
+                    <h3 style="margin-top: 0; color: #333;">أرسل لنا رسالة</h3>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">الاسم <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" required data-rules="required|min:3">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">البريد الإلكتروني <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required data-rules="required|email">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="phone">رقم الهاتف</label>
+                            <input type="tel" id="phone" name="phone" data-rules="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">الموضوع <span class="required">*</span></label>
+                            <select id="subject" name="subject" required>
+                                <option value="">اختر الموضوع</option>
+                                <option value="general">استفسار عام</option>
+                                <option value="support">دعم فني</option>
+                                <option value="booking">حجز رحلة</option>
+                                <option value="courses">دورات تدريبية</option>
+                                <option value="partnership">شراكة تجارية</option>
+                                <option value="feedback">تقييم وملاحظات</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">الرسالة <span class="required">*</span></label>
+                        <textarea id="message" name="message" required data-rules="required|min:10" placeholder="اكتب رسالتك هنا..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="preference">طريقة التواصل المفضلة <span class="required">*</span></label>
+                        <select id="preference" name="preference" required>
+                            <option value="">اختر طريقة التواصل</option>
+                            <option value="email">البريد الإلكتروني</option>
+                            <option value="phone">الهاتف</option>
+                            <option value="whatsapp">WhatsApp</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="form-submit">
+                        <i class="fas fa-paper-plane"></i> إرسال الرسالة
+                    </button>
+                </form>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3323.8467383128827!2d-6.833674323460048!3d34.02074707100495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd9f8a1a1a1a1a1a1%3A0x1a1a1a1a1a1a1a1a!2sRabat%2C%20Morocco!5e0!3m2!1sar!2sma!4v1234567890" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TREP DAWOUD</h3>
+                <p>نظام عرض متقدم لأجمل الجبال حول العالم</p>
+            </div>
+            <div class="footer-section">
+                <h3>الروابط السريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="mountains.html">الجبال</a></li>
+                    <li><a href="contact.html">اتصل بنا</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                    <li><a href="terms.html">الشروط والأحكام</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/config.js"></script>
+    <script src="js/utils.js"></script>
+    <script src="js/form-manager.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/breadcrumb.js"></script>
+    <script>
+        // Initialize contact form
+        const contactForm = new FormManager(document.getElementById('contactForm'));
+
+        contactForm.onSubmit(async (data) => {
+            try {
+                // Simulate sending email (in production, use backend API)
+                console.log('Form Data:', data);
+                
+                // Show success message
+                NotificationUtils.success('تم إرسال رسالتك بنجاح! سنتواصل معك قريباً.', 5000);
+                
+                // Reset form
+                contactForm.reset();
+            } catch (error) {
+                NotificationUtils.error('حدث خطأ في إرسال الرسالة. حاول مرة أخرى.', 5000);
+                console.error('Error:', error);
+            }
+        });
+    </script>
+</body>
+</html>

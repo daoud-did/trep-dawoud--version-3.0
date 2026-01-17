@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - الصفحة غير موجودة | TREP DAWOUD</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/rtl.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: calc(100vh - 300px);
+            padding: 3rem 1rem;
+            text-align: center;
+        }
+
+        .error-code {
+            font-size: 8rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, #d4845c 0%, #e8a876 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin: 0;
+            animation: bounce 2s infinite;
+        }
+
+        .error-title {
+            font-size: 2rem;
+            margin: 1rem 0;
+            color: #333;
+        }
+
+        body.dark-mode .error-title {
+            color: #e0e0e0;
+        }
+
+        .error-description {
+            font-size: 1.1rem;
+            color: #666;
+            margin: 1rem 0 2rem;
+            max-width: 500px;
+        }
+
+        body.dark-mode .error-description {
+            color: #aaa;
+        }
+
+        .error-image {
+            width: 200px;
+            height: 200px;
+            margin: 2rem 0;
+            opacity: 0.9;
+        }
+
+        .error-actions {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .error-btn {
+            padding: 0.8rem 2rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #d4845c 0%, #e8a876 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(212, 132, 92, 0.3);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #d4845c;
+            border: 2px solid #d4845c;
+        }
+
+        .btn-secondary:hover {
+            background: #d4845c;
+            color: white;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .helpful-links {
+            margin-top: 3rem;
+            padding-top: 3rem;
+            border-top: 2px solid #eee;
+        }
+
+        body.dark-mode .helpful-links {
+            border-top-color: #333;
+        }
+
+        .helpful-links h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        body.dark-mode .helpful-links h3 {
+            color: #e0e0e0;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            max-width: 600px;
+        }
+
+        .helpful-links a {
+            padding: 0.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            color: #d4845c;
+            background: #f5f5f5;
+            transition: all 0.3s;
+        }
+
+        body.dark-mode .helpful-links a {
+            background: #333;
+            color: #e8a876;
+        }
+
+        .helpful-links a:hover {
+            background: #d4845c;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <i class="fas fa-mountain"></i>
+                <span>TREP DAWOUD</span>
+            </div>
+            <nav class="nav-menu">
+                <a href="index.html" class="nav-link">الرئيسية</a>
+                <a href="mountains.html" class="nav-link">الجبال</a>
+                <a href="dashboard.html" class="nav-link">لوحة التحكم</a>
+                <a href="blog.html" class="nav-link">المدونة</a>
+                <a href="services.html" class="nav-link">الخدمات</a>
+            </nav>
+            <div class="theme-toggle">
+                <button class="theme-btn" id="themeBtn">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Error Container -->
+    <div class="error-container">
+        <h1 class="error-code">404</h1>
+        <h2 class="error-title">الصفحة غير موجودة</h2>
+        <p class="error-description">
+            عذراً، الصفحة التي تبحث عنها غير موجودة. قد تكون قد حذفت أو نقلت إلى مكان آخر.
+        </p>
+        <i class="fas fa-mountain-sun error-image"></i>
+        
+        <div class="error-actions">
+            <a href="index.html" class="error-btn btn-primary">العودة للرئيسية</a>
+            <button class="error-btn btn-secondary" onclick="history.back()">العودة للخلف</button>
+        </div>
+
+        <div class="helpful-links">
+            <h3>روابط مفيدة</h3>
+            <div class="links-grid">
+                <a href="index.html"><i class="fas fa-home"></i> الرئيسية</a>
+                <a href="mountains.html"><i class="fas fa-mountain"></i> الجبال</a>
+                <a href="courses.html"><i class="fas fa-graduation-cap"></i> الدورات</a>
+                <a href="services.html"><i class="fas fa-concierge-bell"></i> الخدمات</a>
+                <a href="blog.html"><i class="fas fa-blog"></i> المدونة</a>
+                <a href="contact.html"><i class="fas fa-envelope"></i> اتصل بنا</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>TREP DAWOUD</h3>
+                <p>استكشف أجمل الجبال حول العالم</p>
+            </div>
+            <div class="footer-section">
+                <h3>الروابط السريعة</h3>
+                <ul>
+                    <li><a href="index.html">الرئيسية</a></li>
+                    <li><a href="mountains.html">الجبال</a></li>
+                    <li><a href="privacy.html">سياسة الخصوصية</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
